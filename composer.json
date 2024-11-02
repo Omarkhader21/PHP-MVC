@@ -1,0 +1,14 @@
+{
+    "name": "pelfwolf/php-mvc",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "OmarKhader"
+        }
+    ],
+    "require": {}
+}

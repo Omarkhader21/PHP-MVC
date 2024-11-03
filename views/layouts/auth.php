@@ -26,7 +26,7 @@
                 </ul>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
                     <li class="nac-item">
-                        <h4cd ><a class="nav-link" aria-current="page" href="#">Auth layout</a></h4>
+                        <h4cd><a class="nav-link" aria-current="page" href="#">Auth layout</a></h4>
                     </li>
                 </ul>
                 <ul class="navbar-nav me-left mb-2 mb-lg-0">

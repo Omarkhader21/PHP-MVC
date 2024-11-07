@@ -5,6 +5,7 @@ namespace app\core;
 use \app\core\Request;
 use \app\core\Router;
 use \app\core\Response;
+use \app\core\Database;
 
 /**
  * Class Application
@@ -19,16 +20,18 @@ class Application
     public Router $router;
     public Request $request;
     public Response $response;
-    public static Application $app;
     public Controller $controller;
+    public Database $database;
+    public static Application $app;
 
-    public function __construct($rootPath)
+    public function __construct($rootPath, array $config)
     {
         self::$ROOT_DIR = $rootPath;
         self::$app = $this;
         $this->request = new Request();
         $this->response = new Response();
         $this->router = new Router($this->request, $this->response);
+        $this->database = new Database($config['db']);
     }
 
     public function run()

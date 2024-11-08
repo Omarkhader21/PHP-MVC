@@ -18,7 +18,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link <?php echo $_SERVER['REQUEST_URI'] === '/home' ?  'active' : '' ?>" aria-current="page" href="/home">Home</a>
+                        <a class="nav-link <?php
+
+                                            use app\core\Application;
+
+                                            echo $_SERVER['REQUEST_URI'] === '/home' ?  'active' : '' ?>" aria-current="page" href="/home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?php echo $_SERVER['REQUEST_URI'] === '/contact' ?  'active' : '' ?>" aria-current="page" href="/contact">Contact</a>
@@ -37,6 +41,12 @@
     </nav>
 
     <div class="container">
+        <?php if (Application::$app->session->getFlashMessage('success')): ?>
+            <div class="alert alert-success">
+                <?php echo Application::$app->session->getFlashMessage('success'); ?>
+            </div>
+        <?php endif; ?>
+
         {{ content }}
     </div>
 

@@ -6,6 +6,7 @@ use \app\core\Request;
 use \app\core\Router;
 use \app\core\Response;
 use \app\core\Database;
+use \app\core\Session;
 
 /**
  * Class Application
@@ -22,6 +23,7 @@ class Application
     public Response $response;
     public Controller $controller;
     public Database $database;
+    public Session $session;
     public static Application $app;
 
     public function __construct($rootPath, array $config)
@@ -30,6 +32,7 @@ class Application
         self::$app = $this;
         $this->request = new Request();
         $this->response = new Response();
+        $this->session = new Session();
         $this->router = new Router($this->request, $this->response);
         $this->database = new Database($config['db']);
     }

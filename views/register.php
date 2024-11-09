@@ -1,5 +1,4 @@
 <?php
-
 use app\core\form\Form;
 ?>
 <h1>Create new account</h1>

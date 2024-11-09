@@ -1,5 +1,12 @@
+<?php
+use app\core\Application;
+?>
 <h1>Home page</h1>
 
 <h3>
-    Welcome <?php echo $name; ?> 
+    <?php if (Application::isGuest()) : ?>
+        <h2>Try to login, if you don't have account create one</h2>
+    <?php else : ?>
+        <h1>Welcome <?php echo Application::$app->user->getDisplayName(); ?></h1>
+    <?php endif; ?>
 </h3>

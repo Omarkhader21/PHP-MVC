@@ -1,3 +1,6 @@
+<?php
+ use app\core\Application;
+?>
 <!doctype html>
 <html lang="en">
 
@@ -18,24 +21,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link <?php
-
-                                            use app\core\Application;
-
-                                            echo $_SERVER['REQUEST_URI'] === '/home' ?  'active' : '' ?>" aria-current="page" href="/home">Home</a>
+                        <a class="nav-link <?php echo $_SERVER['REQUEST_URI'] === '/home' ?  'active' : '' ?>" aria-current="page" href="/home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?php echo $_SERVER['REQUEST_URI'] === '/contact' ?  'active' : '' ?>" aria-current="page" href="/contact">Contact</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav me-left mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link <?php echo $_SERVER['REQUEST_URI'] === '/login' ?  'active' : '' ?>" aria-current="page" href="/login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?php echo $_SERVER['REQUEST_URI'] === '/register' ?  'active' : '' ?>" aria-current="page" href="/register">Register</a>
-                    </li>
-                </ul>
+                <?php if (Application::isGuest()) : ?>
+                    <ul class="navbar-nav me-left mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $_SERVER['REQUEST_URI'] === '/login' ?  'active' : '' ?>" aria-current="page" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $_SERVER['REQUEST_URI'] === '/register' ?  'active' : '' ?>" aria-current="page" href="/register">Register</a>
+                        </li>
+                    </ul>
+                <?php else: ?>
+                    <ul class="navbar-nav me-left mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/logout">Welcome <?php echo Application::$app->user->getDisplayName(); ?> (Logout)</a>
+                        </li>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
     </nav>

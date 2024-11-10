@@ -1,25 +1,28 @@
 <?php
 use app\core\form\Form;
+$this->title = "register";
 ?>
-<h1>Create new account</h1>
+<div class="container mt-5">
+    <h1>Create new account</h1>
 
-<?php $form = Form::begin('', "post"); ?>
+    <?php $form = Form::begin('', "post"); ?>
 
-<div class="row">
-    <div class="col">
-        <?php echo $form->field($model, "first_name"); ?>
+    <div class="row">
+        <div class="col">
+            <?php echo $form->field($model, "first_name"); ?>
+        </div>
+        <div class="col">
+            <?php echo $form->field($model, "last_name"); ?>
+        </div>
     </div>
-    <div class="col">
-        <?php echo $form->field($model, "last_name"); ?>
-    </div>
+
+    <?php echo $form->field($model, "email"); ?>
+
+    <?php echo $form->field($model, "password")->passwordField(); ?>
+
+    <?php echo $form->field($model, "confirm_password")->passwordField(); ?>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+
+    <?php Form::end(); ?>
 </div>
-
-<?php echo $form->field($model, "email"); ?>
-
-<?php echo $form->field($model, "password")->passwordField(); ?>
-
-<?php echo $form->field($model, "confirm_password")->passwordField(); ?>
-
-<button type="submit" class="btn btn-primary mt-3">Submit</button>
-
-<?php Form::end(); ?>

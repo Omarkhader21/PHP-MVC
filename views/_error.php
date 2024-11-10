@@ -1,5 +1,9 @@
-<?php 
-    /** @var $exception \Exception  */
+<?php
+
+/** @var $exception \Exception  */
+/** @var $this \app\core\View */
+
+$this->title = "error";
 ?>
 
 <h2 class="mt-5">

@@ -1,13 +1,19 @@
 <?php
+
 /** @var $model \app\models\User; */
+
 use app\core\form\Form;
+$this->title = "login";
 ?>
-<h1>Login Page</h1>
 
-<?php $form = app\core\form\Form::begin('', 'post') ?>
+<div class="container mt-5">
+    <h1>Login Page</h1>
 
-<?php echo $form->field($model, 'email'); ?>
-<?php echo $form->field($model, 'password')->passwordField(); ?>
+    <?php $form = app\core\form\Form::begin('', 'post') ?>
 
-<button type="submit" class="btn btn-primary mt-3">Submit</button>
-<?php Form::end() ?>
+    <?php echo $form->field($model, 'email'); ?>
+    <?php echo $form->field($model, 'password')->passwordField(); ?>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    <?php Form::end() ?>
+</div>

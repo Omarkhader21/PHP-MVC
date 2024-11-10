@@ -1,5 +1,6 @@
 <?php
- use app\core\Application;
+
+use app\core\Application;
 ?>
 <!doctype html>
 <html lang="en">
@@ -38,6 +39,9 @@
                     </ul>
                 <?php else: ?>
                     <ul class="navbar-nav me-left mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link <?php echo $_SERVER['REQUEST_URI'] === '/profile' ?  'active' : '' ?>" aria-current="page" href="/profile">profile</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/logout">Welcome <?php echo Application::$app->user->getDisplayName(); ?> (Logout)</a>
                         </li>

@@ -2,10 +2,10 @@
 
 namespace app\controllers;
 
-use app\core\Application;
-use app\core\Controller;
-use app\core\Request;
-use app\core\Response;
+use omarkhader\phpmvccore\Application;
+use omarkhader\phpmvccore\Controller;
+use omarkhader\phpmvccore\Request;
+use omarkhader\phpmvccore\Response;
 use app\models\ContactForm;
 
 class SiteController extends Controller
@@ -29,7 +29,7 @@ class SiteController extends Controller
                 return $response->redirect('/contact');
             }
         }
-        
+
         return $this->render('contact', [
             'model' => $contact
         ]);

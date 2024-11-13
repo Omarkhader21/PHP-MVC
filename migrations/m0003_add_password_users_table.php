@@ -1,6 +1,6 @@
 <?php
 
-use app\core\Application;
+use omarkhader\phpmvccore\Application;
 
 class M0003_add_password_users_table
 {

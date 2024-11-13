@@ -1,10 +1,10 @@
 <?php
 
-/** @var $this \app\core\View */
+/** @var $this \omarkhader\phpmvccore\View */
 /** @var $model \app\models\ContactForm */
 
-use app\core\form\Form;
-use \app\core\form\TextareaField;
+use omarkhader\phpmvccore\form\Form;
+use \omarkhader\phpmvccore\form\TextareaField;
 
 $this->title = "contact";
 ?>

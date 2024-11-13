@@ -2,8 +2,8 @@
 
 namespace app\models;
 
-use app\core\Application;
-use app\core\Model;
+use omarkhader\phpmvccore\Application;
+use omarkhader\phpmvccore\Model;
 use app\models\User;
 
 class LoginForm extends Model

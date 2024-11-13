@@ -4,7 +4,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 use app\controllers\AuthController;
 use \app\controllers\SiteController;
-use \app\core\Application;
+use \omarkhader\phpmvccore\Application;
 use \app\models\User;
 
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
@@ -24,7 +24,7 @@ $app = new Application(dirname(path: __DIR__), $config);
 $app->router->get("/home", [new SiteController(), "home"]);
 
 $app->router->get("/contact", [new SiteController(), "contact"]);
-$app->router->post('/contact', [new SiteController(),'contact']);
+$app->router->post('/contact', [new SiteController(), 'contact']);
 
 $app->router->get("/login", [new AuthController(), "login"]);
 $app->router->post("/login", [new AuthController(), "login"]);
@@ -32,9 +32,9 @@ $app->router->post("/login", [new AuthController(), "login"]);
 $app->router->get("/register", [new AuthController(), "register"]);
 $app->router->post("/register", [new AuthController(), "register"]);
 
-$app->router->get('/logout', [new AuthController(),'logout']);
+$app->router->get('/logout', [new AuthController(), 'logout']);
 
-$app->router->get('/profile', [new AuthController(),'profile']);
+$app->router->get('/profile', [new AuthController(), 'profile']);
 
 
 $app->run();

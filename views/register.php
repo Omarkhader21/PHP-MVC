@@ -1,5 +1,7 @@
 <?php
-use app\core\form\Form;
+
+use omarkhader\phpmvccore\form\Form;
+
 $this->title = "register";
 ?>
 <div class="container mt-5">

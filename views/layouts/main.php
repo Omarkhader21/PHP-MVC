@@ -1,6 +1,6 @@
 <?php
 
-use app\core\Application;
+use omarkhader\phpmvccore\Application;
 ?>
 <!doctype html>
 <html lang="en">

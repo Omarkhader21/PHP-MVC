@@ -1,7 +1,7 @@
 <?php
 
 /** @var $exception \Exception  */
-/** @var $this \app\core\View */
+/** @var $this \omarkhader\phpmvccore\View */
 
 $this->title = "error";
 ?>

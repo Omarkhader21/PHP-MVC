@@ -1,5 +1,7 @@
 <?php
-use app\core\Application;
+
+use omarkhader\phpmvccore\Application;
+
 $this->title = "home";
 ?>
 

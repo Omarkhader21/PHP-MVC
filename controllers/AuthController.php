@@ -3,12 +3,12 @@
 namespace app\controllers;
 
 use app\models\User;
-use app\core\Request;
-use app\core\Response;
-use app\core\Controller;
-use app\core\Application;
+use omarkhader\phpmvccore\Request;
+use omarkhader\phpmvccore\Response;
+use omarkhader\phpmvccore\Controller;
+use omarkhader\phpmvccore\Application;
 use app\models\LoginForm;
-use app\core\middlewares\AuthMiddleware;
+use omarkhader\phpmvccore\middlewares\AuthMiddleware;
 
 class AuthController extends Controller
 {
@@ -31,7 +31,7 @@ class AuthController extends Controller
         }
         $this->setLayout("auth");
         return $this->render('login', [
-            'model'=> $loginForm,
+            'model' => $loginForm,
         ]);
     }
 

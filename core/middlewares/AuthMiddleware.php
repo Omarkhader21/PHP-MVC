@@ -1,10 +1,10 @@
 <?php
 
-namespace omarkhader21/phpcoremvc\middlewares;
+namespace app\core\middlewares;
 
-use omarkhader21/phpcoremvc\Application;
-use omarkhader21/phpcoremvc\exception\ForbiddenException;
-use omarkhader21/phpcoremvc\middlewares\BaseMiddleware;
+use app\core\Application;
+use app\core\exception\ForbiddenException;
+use app\core\middlewares\BaseMiddleware;
 
 class AuthMiddleware extends BaseMiddleware
 {

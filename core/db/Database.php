@@ -1,8 +1,8 @@
 <?php
 
-namespace omarkhader21/phpcoremvc\db;
+namespace app\core\db;
 
-use omarkhader21/phpcoremvc\Application;
+use app\core\Application;
 
 class Database
 {

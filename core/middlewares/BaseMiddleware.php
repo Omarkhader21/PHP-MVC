@@ -1,6 +1,6 @@
 <?php
 
-namespace omarkhader21/phpcoremvc\middlewares;
+namespace app\core\middlewares;
 
 abstract class BaseMiddleware
 {

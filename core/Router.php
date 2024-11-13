@@ -1,9 +1,9 @@
 <?php
 
-namespace omarkhader21/phpcoremvc;
+namespace app\core;
 
-use \omarkhader21/phpcoremvc\Request;
-use omarkhader21/phpcoremvc\exception\NotFoundException;
+use \app\core\Request;
+use app\core\exception\NotFoundException;
 
 class Router
 {
@@ -44,7 +44,7 @@ class Router
         }
 
         if (is_array($callback)) {
-            /** @var \omarkhader21/phpcoremvc\Controller $controller */
+            /** @var \app\core\Controller $controller */
             $controller = new $callback[0]();
             Application::$app->controller = $controller;
             $controller->action = $callback[1];

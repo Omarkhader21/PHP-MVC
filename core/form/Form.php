@@ -1,8 +1,8 @@
 <?php
 
-namespace omarkhader21/phpcoremvc\form;
+namespace app\core\form;
 
-use omarkhader21/phpcoremvc\Model;
+use app\core\Model;
 
 class Form
 {

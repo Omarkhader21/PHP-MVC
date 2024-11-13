@@ -1,9 +1,9 @@
 <?php
 
-namespace omarkhader21/phpcoremvc\db;
+namespace app\core\db;
 
-use omarkhader21/phpcoremvc\Model;
-use omarkhader21/phpcoremvc\Application;
+use app\core\Model;
+use app\core\Application;
 
 abstract class DbModel extends Model
 {
@@ -42,9 +42,8 @@ abstract class DbModel extends Model
         $sql = implode(" AND ", array_map(fn($attr) => "$attr = :$attr", $attributes));
 
         $statement = self::prepare("SELECT * FROM $tableName WHERE $sql");
-        
-        foreach($where as $key => $item)
-        {
+
+        foreach ($where as $key => $item) {
             $statement->bindValue(":$key", $item);
         }
 

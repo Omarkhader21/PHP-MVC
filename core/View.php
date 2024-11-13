@@ -1,6 +1,6 @@
 <?php
 
-namespace omarkhader21/phpcoremvc;
+namespace app\core;
 
 class View
 {

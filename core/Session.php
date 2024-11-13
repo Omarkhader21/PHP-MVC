@@ -1,6 +1,6 @@
 <?php
 
-namespace omarkhader21/phpcoremvc;
+namespace app\core;
 
 class Session
 {
@@ -35,7 +35,7 @@ class Session
 
     public function get($key)
     {
-        return $_SESSION[$key] ?? false; 
+        return $_SESSION[$key] ?? false;
     }
 
     public function remove($key)
@@ -53,7 +53,7 @@ class Session
                 unset($flashMessages[$key]);
             }
         }
-        
+
         $_SESSION[self::FLASH_KEY] = $flashMessages;
     }
 }

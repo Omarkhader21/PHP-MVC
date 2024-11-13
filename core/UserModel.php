@@ -1,10 +1,10 @@
 <?php
 
-namespace omarkhader21/phpcoremvc;
+namespace app\core;
 
-use omarkhader21/phpcoremvc\db\DbModel;
+use app\core\db\DbModel;
 
 abstract class UserModel extends DbModel
 {
-    abstract public function getDisplayName (): string;
+    abstract public function getDisplayName(): string;
 }

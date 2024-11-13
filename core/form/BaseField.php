@@ -1,14 +1,14 @@
 <?php
 
-namespace omarkhader21/phpcoremvc\form;
+namespace app\core\form;
 
-use omarkhader21/phpcoremvc\Model;
+use app\core\Model;
 
 abstract class BaseField
 {
     public Model $model;
     public string $attribute;
-    
+
     abstract public function renderInput(): string;
 
     public function __construct(Model $model, string $attribute)

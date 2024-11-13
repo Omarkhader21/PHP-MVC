@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace omarkhader21/phpcoremvc;
 
-use app\core\middlewares\BaseMiddleware;
+use omarkhader21/phpcoremvc\middlewares\BaseMiddleware;
 
 class Controller
 {

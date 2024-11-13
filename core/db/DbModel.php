@@ -1,9 +1,9 @@
 <?php
 
-namespace app\core\db;
+namespace omarkhader21/phpcoremvc\db;
 
-use app\core\Model;
-use app\core\Application;
+use omarkhader21/phpcoremvc\Model;
+use omarkhader21/phpcoremvc\Application;
 
 abstract class DbModel extends Model
 {

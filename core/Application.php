@@ -1,19 +1,19 @@
 <?php
 
-namespace app\core;
+namespace omarkhader21/phpcoremvc;
 
-use \app\core\Router;
-use \app\core\Request;
-use \app\core\Session;
-use \app\core\Response;
-use app\core\db\DbModel;
-use app\core\db\Database;
+use \omarkhader21/phpcoremvc\Router;
+use \omarkhader21/phpcoremvc\Request;
+use \omarkhader21/phpcoremvc\Session;
+use \omarkhader21/phpcoremvc\Response;
+use omarkhader21/phpcoremvc\db\DbModel;
+use omarkhader21/phpcoremvc\db\Database;
 
 /**
  * Class Application
  * 
  *  @author pelfwolf
- *  @package app\core
+ *  @package omarkhader21/phpcoremvc
  */
 
 class Application
@@ -69,7 +69,7 @@ class Application
     }
 
     /**
-     * @return \app\core\Controller
+     * @return \omarkhader21/phpcoremvc\Controller
      */
 
     public function getController()
@@ -78,7 +78,7 @@ class Application
     }
 
     /**
-     * @param \app\core\Controller $controller
+     * @param \omarkhader21/phpcoremvc\Controller $controller
      */
 
     public function setController(Controller $controller)

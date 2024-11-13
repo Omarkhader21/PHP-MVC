@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\form;
+namespace omarkhader21/phpcoremvc\form;
 
-use app\core\Model;
+use omarkhader21/phpcoremvc\Model;
 
 class TextareaField extends BaseField
 {

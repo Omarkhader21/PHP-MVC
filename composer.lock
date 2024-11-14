@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4f09f1ddc3d5326c5f54a1bd4dcb918",
+    "content-hash": "e66f19947e08139c8d582a9f74c16b1f",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -70,16 +70,16 @@
         },
         {
             "name": "omarkhader/phpmvccore",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Omarkhader21/pf-php-mvc-core.git",
-                "reference": "78a67e9055c582d2791e5338b7a45115866cc2ed"
+                "reference": "ef0351af5ab1b45c3b89c02c34d86199cb45c5aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Omarkhader21/pf-php-mvc-core/zipball/78a67e9055c582d2791e5338b7a45115866cc2ed",
-                "reference": "78a67e9055c582d2791e5338b7a45115866cc2ed",
+                "url": "https://api.github.com/repos/Omarkhader21/pf-php-mvc-core/zipball/ef0351af5ab1b45c3b89c02c34d86199cb45c5aa",
+                "reference": "ef0351af5ab1b45c3b89c02c34d86199cb45c5aa",
                 "shasum": ""
             },
             "type": "library",
@@ -97,9 +97,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Omarkhader21/pf-php-mvc-core/issues",
-                "source": "https://github.com/Omarkhader21/pf-php-mvc-core/tree/v1.0.1"
+                "source": "https://github.com/Omarkhader21/pf-php-mvc-core/tree/v1.0.2"
             },
-            "time": "2024-11-13T21:04:50+00:00"
+            "time": "2024-11-13T21:47:01+00:00"
         },
         {
             "name": "phpoption/phpoption",
